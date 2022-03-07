@@ -27,11 +27,14 @@ terraform apply build-plan
 * to destroy the build-plan
   * this will work only if statefile is present
 
+
 ```
-terraform plan -destroy -out destroy-plan
+terraform plan -destroy -out destroy-plan 
 ```
 
 * Now use the below command to destroy resources using the destory-plan we created
   
 ```
-terraform apply destory-plan to destroy
+terraform apply destory-plan
+```
+
