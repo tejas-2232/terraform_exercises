@@ -9,21 +9,24 @@ provider "azurerm" {
 
 # create resource group
 resource "azurerm_resource_group" "expample_rg_blue" {
-    name = "BGD-Blue-RG"
-    location = "eastus"
+  name     = "BGD-Blue-RG"
+  location = "eastus"
 
-    tags = {
-      "owner" = "tejas b"
-      "team"  = "devops"
-      "project" = "Automation"
-    }
-}
+  tags = {
+    "owner"   = "tejas b"
+    "team"    = "devops"
+    "project" = "Automation"
+  }
 
 # this will prevent resource from being destroyed
 
-lifecycle{
-    prevent_destroy = true
+    lifecycle {
+        prevent_destroy = false
+    }
+
 }
+
+
 
 # this will destory resources 
 
@@ -34,12 +37,12 @@ lifecycle{
 # create 2nd resource group
 
 resource "azurerm_resource_group" "expample_rg_red" {
-    name = "BGD-GREEN-RG"
-    location = "eastus"
+  name     = "BGD-GREEN-RG"
+  location = "eastus"
 
-    tags = {
-      "owner" = "tejas b"
-      "project" = "Blue-box"
-      "version" = "v1.2.0"
-    }
+  tags = {
+    "owner"   = "tejas b"
+    "project" = "Blue-box"
+    "version" = "v1.2.0"
+  }
 }
