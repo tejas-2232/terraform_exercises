@@ -8,7 +8,7 @@ provider "azurerm" {
 }
 
 # create resource group
-resource "azurerm_resource_group" "expample_rg_blue" {
+resource "azurerm_resource_group" "example_rg_blue" {
   name     = "BGD-Blue-RG"
   location = "eastus"
 
@@ -34,7 +34,7 @@ resource "azurerm_resource_group" "expample_rg_blue" {
 
 # create 2nd resource group
 
-resource "azurerm_resource_group" "expample_rg_red" {
+resource "azurerm_resource_group" "example_rg_red" {
   name     = "BGD-GREEN-RG"
   depends_on = [ azurerm_resource_group.example_rg_blue ] # BGD-GREEN-RG will execute only after BGD-Blue-RG (i.e it depends on it)
   location = "eastus"
