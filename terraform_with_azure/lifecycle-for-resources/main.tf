@@ -44,4 +44,10 @@ resource "azurerm_resource_group" "example_rg_red" {
     "project" = "Blue-box"
     "version" = "v1.2.0"
   }
+  
+# this will create the new resource before destroying the older one. 
+# So the end user will not face any downtime for the application
+  lifecycle {
+    create_before_destroy = true
+  }
 }
