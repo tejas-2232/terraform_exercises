@@ -17,3 +17,6 @@
 * ```terraform plan -out vm-plan2```
 
 * ```terraform apply vm-plan2```
+
+* Use ```terraform destroy``` to destroy the resources created.
+
