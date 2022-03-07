@@ -9,7 +9,7 @@ provider "azurerm" {
 
 # create resource group
 resource "azurerm_resource_group" "example_rg_blue" {
-  name     = "BGD-Blue-RG"
+  name     = "blue-Whale-Research"
   location = "eastus"
 
   tags = {
@@ -35,7 +35,7 @@ resource "azurerm_resource_group" "example_rg_blue" {
 # create 2nd resource group
 
 resource "azurerm_resource_group" "example_rg_red" {
-  name     = "BGD-GREEN-RG"
+  name     = "red-sea-Research"
   depends_on = [ azurerm_resource_group.example_rg_blue ] # BGD-GREEN-RG will execute only after BGD-Blue-RG (i.e it depends on it)
   location = "eastus"
 
