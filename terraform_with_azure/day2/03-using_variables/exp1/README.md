@@ -72,5 +72,9 @@ Terraform will perform the following actions:
 
 Plan: 1 to add, 0 to change, 0 to destroy.
 ```
+<hr>
+
+__Now we will use .tfvars file to pass vars in command line__
+
 
 
