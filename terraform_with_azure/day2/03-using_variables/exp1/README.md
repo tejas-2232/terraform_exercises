@@ -76,5 +76,21 @@ Plan: 1 to add, 0 to change, 0 to destroy.
 
 __Now we will use .tfvars file to pass vars in command line__
 
+Two tfvars files => <br>
+
+1. uat.tfvars
+
+```tf
+my_loc = "eastus"
+my_rg_name = "UAT_RG"
+```
+
+
+2. prod.tfvars
+
+```tf
+my_loc = "westus"
+my_rg_name = "Prod_RG"
+```
 
 
