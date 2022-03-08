@@ -57,7 +57,7 @@ resource "azurerm_public_ip" "first_public" {
 # -------------------------------------------------
 # Create nic3 for backend2 vm
 resource "azurerm_network_interface" "example_rg_3" {
-  name     = nic_3
+  name     = "nic_3"
   location = azurerm_resource_group.example_rg.location
   resource_group_name = azurerm_resource_group.example_rg.name
 
@@ -102,7 +102,7 @@ resource "azurerm_public_ip" "second_public" {
 
 # Create nic4 for FrontEnd2 vm
 resource "azurerm_network_interface" "example_rg_4" {
-  name     = nic_4
+  name     = "nic_4"
   location = azurerm_resource_group.example_rg.location
   resource_group_name = azurerm_resource_group.example_rg.name
 
@@ -110,7 +110,7 @@ resource "azurerm_network_interface" "example_rg_4" {
     name                            = "nic4_subnet2_IP"
     subnet_id                       = azurerm_subnet.second.id
     private_ip_address_allocation   = "Dynamic"
-    public_ip_address_id            = azurerm_public_ip.fourth__public.id
+    public_ip_address_id            = azurerm_public_ip.fourth_public.id
   }
 }
 # Public IP Configuration for nic4 FrontEnd2
