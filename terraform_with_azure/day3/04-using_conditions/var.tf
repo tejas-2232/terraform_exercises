@@ -1,7 +1,7 @@
 variable "location" {
   type = list 
   description = "Azure location for my RG"
-  default = ["eastus", "westus", "westus2"]
+  default = ["eastus", "westus", "westus2","southindia"]
 }
 
 variable "system" { 
