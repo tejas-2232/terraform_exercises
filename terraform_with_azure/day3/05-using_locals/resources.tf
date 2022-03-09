@@ -20,7 +20,7 @@ locals {
      Owner = "DevOps Team"
      Project = "Terraform Automation"
      Env   = "Production"
-     Name  = local.default_frontend_name
+     Name  = local.default_backend_name
   }
 }
 
