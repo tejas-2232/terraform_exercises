@@ -1,7 +1,6 @@
 
 # Using modules in Terraform
 
-[Documentation]()
 
 __We are using 2 modules here__
 
@@ -15,8 +14,14 @@ __We are using 2 modules here__
 
 2. compute => `to create a virtual machine `
 
+* compute:
+  * main.tf
+  * provider.tf
+  * variable.tf
 
+<hr>
 
+Let's explore each file one by one
 
 
 
