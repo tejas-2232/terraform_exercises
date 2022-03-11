@@ -1,6 +1,7 @@
 
 ## Using file provisioner to transfer script from local machine to remote vm
 
+* Resource group of name `BU_service` will be created
 
 __Using file provisioner to copy frontend/sh file to remote machine__
 
