@@ -13,4 +13,8 @@ In this repo, we'll cover
 * `multi-cloud` -> Deploying resorces for multi-cloud environments
 * `terraform_CLI`-> 
 * `lifecycle-for-resources` -> using lifecycle to prevent accidental termination of resources.
-* `provisionAzureVm` -> How to provision a virtual machine on Azure
+* `provisionAzureVm` -> How to provision a virtual machine on Azur
+
+To delete .lock file use below command
+
+> 
