@@ -2,7 +2,8 @@
 
 
 ```
-terraform fmt : rewrites Terraform configuration files to a canonical format and style, so you don't have to waste time making minor adjustments for readability and consistency
+terraform fmt: 
+rewrites Terraform configuration files to a canonical format and style, so you don't have to waste time making minor adjustments for readability and consistency
 ```
 
 ```
